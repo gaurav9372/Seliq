@@ -1,7 +1,7 @@
 
 
 .nav-bg-color{
-    background-color: #663399;
+    background-color: #1EA075;
 }
 
 /*
@@ -49,6 +49,7 @@
 }
 
 
+/*
 .fmodal{
   position: fixed;
   top: 0;
@@ -60,7 +61,9 @@
   outline: 0;
     overflow: hidden; 
 }
+*/
 
+/*
 .fmodal-dialog {
     padding: 30px;
     display: flex;
@@ -71,7 +74,9 @@
     height: 100%;
     margin: auto;
 }
+*/
 
+/*
 .close_model{
     background-color: #663399;
     position: relative;
@@ -81,6 +86,7 @@
     height: 30px;
     width: 30px;
 }
+*/
 
 .navbar-toggler{
     font-size: 1.25rem !important;
@@ -89,13 +95,13 @@
 }
 
 .navbar-toggler:hover{
-    background-color: #4F267F !important;
+    background-color: #2E9080 !important;
 }
 
 .navbar-toggler-icon:hover{
 }
 
 .dropdown-menu a:hover{
-    border-left:5px solid #663399;
+    border-left:5px solid #1EA075;
     padding-right: -3px;
 }
