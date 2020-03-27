@@ -1,1 +1,2 @@
-# seliq2.github.io
+# Seliq
+College Project

@@ -1,0 +1,103 @@
+.body_section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+
+.c_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product_thumb{
+    position: relative;
+    display: flex;
+    border: 1px solid #999999;
+    margin: 15px 5px 15px;
+    width:  200px;
+    height: 200px;
+/*    background-color: #CCCCCC;*/
+    border-radius: 6px ;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+/*
+
+.f_container .textbox{
+    border: 1px solid #663399;
+    width: 100%;
+    border-radius: 4px;
+    height: 2rem;
+    padding-left: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.caption{
+    text-transform:uppercase;
+    width: 100%;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    background-color: #663399;
+    color: #fff;
+    border: 0px;
+}
+
+
+.button:hover{
+    border: 2px solid #663399; 
+    background-color: transparent;
+    color: #663399;
+}
+*/
+
+
+/*Tablet*/
+
+/*
+@media all and (min-width: 600px) {
+
+.f_container{
+    
+    width:300px;
+}
+
+}
+*/
+
+/*Desktop*/
+/*
+@media all and (min-width: 900px) {
+    
+
+
+
+    
+}
+*/
+
+

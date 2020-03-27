@@ -5,12 +5,17 @@
 
     <meta charset="utf-8">
 
-<!--    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    
     <link rel="stylesheet" type="text/css" href="css/body.css">
+
+<!--       Contains modal and footer properties -->
+        
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Seliq - Home Page</title>
+    <title>Seliq - Login Page</title>
 
     <link href="bootstrap/bootstrap.css" rel="stylesheet">
     <script src="bootstrap/jquery.js"></script>
@@ -19,10 +24,10 @@
 </head>
 
 <body>
-    <header class="header">
+<header class="header">
         <nav class="navbar fixed-top shadow navbar-expand-lg navbar-dark nav-bg-color">
             <a class="navbar-brand ml-lg-4" href="index.html">
-                <img src="logo.png" width="50%" height="50%" alt="logo">
+                <img src="images/logo.png" width="50%" height="50%" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -74,40 +79,8 @@
         </nav>
     </header>
 
-    <main>
 
-        <div class="bulletin">
-            <span class="Blogo"></span>
-            <div class="news"> News bulletin here </div>
-            <span class="cross_logo"></span>
-        </div>
-
-        <!--Cover section-->
-
-        <section>
-            <div class="cover_section">
-                <div class="cover_img">
-                    <div class="overlay">
-                        <div class="card_container">
-                            <h1>Welcome to Seliq</h1>
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus delectus quisquam reiciendis</p>-->
-
-                            <a href="#account" class="get_started" data-toggle="modal" data-target="#signin">
-                                <div>
-                                    Create Account
-                                </div>
-                            </a>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--  Sign in  Modal   -->
-
+        <!--  Sign in  Model   -->
 
         <div class="fmodal fade" id="signin" tabindex="-1" role="dialog" arai-laballedby="exampleM0dalLabel" aria-hidden="true">
 
@@ -175,143 +148,49 @@
 
         </div>
 
+        <!--       login section          -->
+<main>
+        <div class="body_section">
 
-
-        <!--          Search Tab                  -->
-        <section class="tab_section">
-                <form class="tab">
-     
-        <select name="category" class="input categorybox">
-
-        <option value="electronics">Electronics</option>
-
-        <option value="gadgets">Gadgets</option>
-    
-        <option value="books">Books</option>
-        
-        <option value="households">Households</option>
-        
-        <option value="Mobiles">Mobiles</option>
-               
-        <option value="Vehicles">Vehicles</option>
-        
-        <option value="Vehicles">Others</option>
-        
-        </select>
-
-           <input type="text" name="search" class="input searchbox" placeholder="search any product">
-
-              </form>
-        </section>
-        <!--Carousal-->
-
-
-        <!--Categories-->
-        <section class="categories">
-
-
-<!--
-            <div class="circles">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
+            <div class="headings">
+                <h2>Login to your account</h2>
             </div>
--->
 
-            <div class="background">
-                <div>
-                    <h3>looking for ?</h3>
+            <form class="f_container">
+
+                <div class="caption">Email</div>
+                <div class="row">
+                    <input type="email" placeholder="Enter your email" class="textbox w100">
                 </div>
 
 
-
-                <div class="CT_container">
-
-                    <div class="thumbs">
-
-                        <div class="image_container">
-                            <img class="icon" src="Icons/kettle.svg" alt="electronics" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Electronics
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="thumbs">
-                        <div class="image_container">
-                            <img class="icon" src="Icons/gadgets.svg" alt="gadgets" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Gadgets
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="thumbs">
-                       <div class="image_container">
-                            <img class="icon" src="Icons/households.svg" alt="households" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Households
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="thumbs">
-                       <div class="image_container">
-                            <img class="icon" src="Icons/mobile.svg" alt="mobiles" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Mobiles
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="thumbs">
-                       <div class="image_container">
-                            <img class="icon" src="Icons/bike.svg" alt="vehicles" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Vehicles
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="thumbs">
-                       <div class="image_container">
-                            <img class="icon" src="Icons/other.svg" alt="others" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                               Other
-                            </div>
-                        </div>
-                    </div>
+                <div class="caption">Password</div>
+                <div class="row">
+                    <input type="password" placeholder="Enter Password" class="textbox w100">
 
                 </div>
 
-            </div>
 
-        </section>
-        <!--team-->
-        <section></section>
+                <submit>
+                    <input class="button" type="button" value="Login">
+                </submit>
+                
+                <p>Create an account 
+                <a data-toggle="modal" data-target="#signin">here</a>
+                </p>
+            </form>
+        </div>
 
     </main>
 
-    <footer class="page_footer">
+                    <!--Footer-->
+
+<footer class="page_footer">
 
         <div class="wrap_one">
 
             <div class="Fcaption">
-                <a href="about.html">About StuClona</a>
+                <a href="about.html">About Seliq</a>
             </div>
 
             <div class="Fcaption">
@@ -329,13 +208,13 @@
             <div class="Fcaption">Contact</div>
             <ul>
                 <li class=contact_number>+98-1234567890</li>
-                <li class="email">StuClona@gmail.com</li>
+                <li class="email">Seliq@gmail.com</li>
             </ul>
 
             <div class="Fcaption">Stay Connected</div>
             <ul>
-                <li><a href="http://www.facebook.com/StuClona">Facebook</a></li>
-                <a href="http://www.instagram.com/Stuclona">Instagram</a>
+                <li><a href="http://www.facebook.com/seliq">Facebook</a></li>
+                <a href="http://www.instagram.com/seliq">Instagram</a>
             </ul>
         </div>
 
