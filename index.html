@@ -7,9 +7,9 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Seliq - Home Page</title>
 
@@ -24,7 +24,8 @@
 </head>
 
 <body>
-    <header class="header">
+    
+<header class="header">
         <nav class="navbar shadow navbar-expand-lg navbar-dark nav-bg-color">
             <a class="navbar-brand ml-lg-4" href="index.html">
                 <img src="images/logo.png" width="50%" height="50%" alt="logo">
@@ -51,11 +52,11 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Log in</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item">
                         <a href="signup.html" class="nav-link">
-                            SIGNUP
+                            Sign up
                         </a>
                     </li>
 
@@ -74,8 +75,6 @@
         </nav>
     </header>
 
-
-
 <main>
 
         <!-- <div class="bulletin">
@@ -86,28 +85,29 @@
 
         <!--Cover section-->
 <section class="cover_section">
-
             <!-- <div class="cover_img"> -->
             <!-- <div class="overlay"> -->
             <!-- <div class="card_container"> -->
             <h1>Welcome to Seliq</h1>
             <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus delectus quisquam reiciendis</p>-->
 
-            <a href="Signup.html">
-                <div class="get_started">
+           
+            <a href="signup.html">
+                   <button type="button" class="get_started">
                     Create Account
-                </div>
+                    </button>
             </a>
+            
             <!-- </div> -->
             <!-- </div> -->
             <!-- </div> -->
 </section>
 
-        <!--          Search Tab                  -->
-        <section class="tab_section">
-            <form class="tab">
+        <!--=Search Tab-->
+<section class="tab_section">
+        <form class="tab">
 
-                <!--
+<!--
         <select name="category" class="input categorybox">
 
         <option value="electronics">Electronics</option>
@@ -127,124 +127,103 @@
         </select>
 -->
 
-                <input type="text" name="search" class="input searchbox" placeholder="search any product">
+                <input type="search" name="search" class="input searchbox" placeholder="search any product">
 
             </form>
-        </section>
+</section>
+       
         <!--Carousal-->
 
 
         <!--Categories-->
-        <section class="categories">
+<section class="categories_section">
 
+    <div class="ct_header">
+           <p>Looking for?</p>
+    </div>
 
-            <!--
-            <div class="circles">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
+      <div class="ct_container">
+
+        <div class="thumbs">
+            <div class="image_container">
+                   <img class="icon" src="Icons/kettle.svg" alt="electronics" />
             </div>
--->
+            <div class="button">
+                    Electronics
+            </div>
+        </div>
 
-            <div class="background">
-                <div>
-                    <h2>looking for ?</h2>
-                </div>
-
-                <div class="CT_container">
-
-                    <div class="thumbs">
-
-                        <div class="image_container">
-                            <img class="icon" src="Icons/kettle.svg" alt="electronics" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Electronics
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="thumbs">
-                        <div class="image_container">
-                            <img class="icon" src="Icons/gadgets.svg" alt="gadgets" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
+        <div class="thumbs">
+            <div class="image_container">
+                   <img class="icon" src="Icons/gadgets.svg" alt="gadgets" />
+            </div>
+            <div class="button">
                                 Gadgets
-                            </div>
-                        </div>
-                    </div>
+             </div>
+                        
+        </div>
 
-                    <div class="thumbs">
-                        <div class="image_container">
-                            <img class="icon" src="Icons/households.svg" alt="households" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
+        <div class="thumbs">
+            <div class="image_container">
+                 <img class="icon" src="Icons/households.svg" alt="households" />
+            </div>
+            <div class="button">
                                 Households
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
 
-                    <div class="thumbs">
-                        <div class="image_container">
-                            <img class="icon" src="Icons/mobile.svg" alt="mobiles" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Mobiles
-                            </div>
-                        </div>
-                    </div>
+        <div class="thumbs">
+            <div class="image_container">
+                <img class="icon" src="Icons/mobile.svg" alt="mobiles" />
+            </div>
+            <div class="button">
+                Mobiles
+            </div>
+        </div>
 
-                    <div class="thumbs">
-                        <div class="image_container">
-                            <img class="icon" src="Icons/bike.svg" alt="vehicles" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
+        <div class="thumbs">
+            <div class="image_container">
+                <img class="icon" src="Icons/bike.svg" alt="vehicles" />
+            </div>
+            <div class="button">
                                 Vehicles
                             </div>
-                        </div>
-                    </div>
+        </div>
 
-                    <div class="thumbs">
-                        <div class="image_container">
-                            <img class="icon" src="Icons/other.svg" alt="others" />
-                        </div>
-                        <div class="title_container">
-                            <div class="info_button">
-                                Other
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+        <div class="thumbs">
+            <div class="image_container">
+                <img class="icon" src="Icons/other.svg" alt="others" />
             </div>
+            <div class="button">
+                Other
+            </div>
+        </div>
 
-        </section>
+      </div>
+
+</section>
+        
         <!--team-->
-        <section></section>
+        
+<section></section>
 
-    </main>
+</main>
 
-    <footer class="page_footer">
+<!--Footer-->
+
+<footer class="page_footer">
 
         <div class="wrap_one">
 
-            <div class="Fcaption">
+            <div class="fcaption">
                 <a href="about.html">About Seliq</a>
             </div>
 
-            <div class="Fcaption">
+            <div class="fcaption">
                 <a href="support.html">Support Us</a>
             </div>
 
-            <div class="Fcaption">
+            <div class="fcaption">
                 <a href="privacy.html">Privacy</a>
             </div>
 
@@ -252,14 +231,15 @@
 
         <div class="wrap_two">
 
-            <div class="Fcaption">Contact
+     <div class="fcaption">
+               Contact
                 <ul>
-                    <li class=contact_number>+98-1234567890</li>
-                    <li class="email">StuClona@gmail.com</li>
+                    <li class="contact_number">+981234567890</li>
+                    <li class="email">Seliq@gmail.com</li>
                 </ul>
-            </div>
+    </div>
 
-            <div class="Fcaption">Stay Connected</div>
+     <div class="fcaption">Stay Connected
             <ul>
                 <li>
                     <a href="http://www.facebook.com/StuClona">Facebook</a>
@@ -268,6 +248,8 @@
                     <a href="http://www.instagram.com/Stuclona">Instagram</a>
                 </li>
             </ul>
+    </div>
+        
         </div>
 
         <div class="wrap_three">
@@ -278,7 +260,7 @@
 
         </div>
 
-    </footer>
+</footer>
 
 </body>
 
