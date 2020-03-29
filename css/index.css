@@ -91,8 +91,9 @@
     font-family: 'Open Sans', sans-serif;
     width: 170px;
     height: 40px;
+    
     font-size: 0.7em;
-    background-color: hsla(350,70%,50%,1);
+    background-color: hsla(43,90%,50%,1);
     display: flex;
     align-self: flex-end;
     justify-content: center;
@@ -103,15 +104,21 @@
     border-radius: 5px;
 }
 .c_button:hover{
-    background-color: #B71543;
+    background-color: hsla(350,70%,50%,1);
+    color:#fff !important;
 }
 
+.c_button:hover > a{
+    color:#fff ;
+}
+
+
 .c_button a{
-    color: #fff;
+    font-weight: bold;
+    color: #000;
     text-decoration: none;
 }
 .c_button a:hover{
-    color: #fff;
     text-decoration: none;
 }
          /*Search tab*/
