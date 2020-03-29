@@ -47,7 +47,7 @@
     
     flex-direction: column;
     
-    background-image:linear-gradient(135deg,rgba(19,182,86,0.7)50%,rgba(19,182,86,0.2));
+    background-image:linear-gradient(135deg,hsla(120,80%,30%,0.7)50%,hsla(120,80%,30%,0.2));
 }
 
 .w90{
@@ -91,7 +91,7 @@
     width: 170px;
     height: 40px;
     font-size: 0.8em;
-    background-color: #EE1C4E;
+    background-color: hsla(338,70%,40%,1);
     display: flex;
     align-self: flex-end;
     justify-content: center;
