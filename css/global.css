@@ -28,7 +28,7 @@ body p{
 
 /*navigation bar*/
 .nav-bg-color{
-    background-color: #1D6C4B;
+    background-color: hsla(350,70%,50%,1);
 }
 /*
 .circle{
@@ -113,7 +113,7 @@ body p{
     border: transparent !important;
 }
 .navbar-toggler:hover{
-    background-color: #2E9080 !important;
+    background-color:  hsla(350,70%,38%,1) !important;
 }
 .dropdown-menu a:hover{
     border-left:5px solid #1EA075;
@@ -178,6 +178,6 @@ body p{
     color: #fff;
 }
 .fcaption a:hover{
-    color: #1EA075;
+    color: hsla(350,70%,50%,1);
     text-decoration: none;
 }

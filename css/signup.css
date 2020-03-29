@@ -27,7 +27,7 @@
     letter-spacing: 1px;
     font-weight: bold;
     margin: 0px;
-    color: #1EA075;
+    color: hsla(350,70%,50%,1);
     padding: 0px;
 }
 .heading p{
@@ -49,7 +49,7 @@
     width: 100%;
 }
 .fcontainer .textbox{
-    border: 1px solid #1EA075;
+    border: 1px solid hsla(350,70%,50%,1);;
     border-radius: 4px;
     height: 2rem;
     padding-left: 8px;
@@ -79,14 +79,14 @@
     height: 40px;
     border-radius: 6px;
     margin-top: 20px;
-    background-color: #1EA075;
+    background-color: hsla(350,70%,50%,1);
     color: #fff;
     border: 0px;
 }
 .button:hover{
-    border: 2px solid #1EA075; 
+    border: 2px solid hsla(350,70%,50%,1); 
     background-color: transparent;
-    color: #1EA075;
+    color: hsla(350,70%,50%,1);
 }
 
 .fcontainer p{ 
@@ -95,7 +95,7 @@
 }
 .fcontainer a{
 /*    font-style: italic;*/
-    color: #1EA075 !important;
+    color: hsla(350,70%,50%,1) !important;
     cursor: pointer;
     font-weight: bold;
     

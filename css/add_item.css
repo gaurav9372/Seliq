@@ -69,7 +69,7 @@
     height: 35px;
     border-radius: 6px;
     margin-top: 20px;
-    background-color: #663399;
+    background-color: hsla(350,70%,50%,1);
     color: #fff;
     border: 0px;
 }

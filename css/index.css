@@ -92,7 +92,7 @@
     width: 170px;
     height: 40px;
     font-size: 0.7em;
-    background-color: hsla(338,70%,40%,1);
+    background-color: hsla(350,70%,50%,1);
     display: flex;
     align-self: flex-end;
     justify-content: center;
@@ -123,7 +123,7 @@
     height: 50px;
     justify-content: center;
     align-items: center;
-    background-color: #1D6C4B;
+    background-color: hsla(350,70%,50%,1);
 }
 .tab .input {
     border: 0px solid #1EA075;
@@ -191,7 +191,7 @@
 }
 .thumbs:hover{
     transform: scale(1.03);
-    box-shadow: 0px 0px 5px #1EA075; 
+    box-shadow: 0px 0px 5px hsla(350,70%,50%,1);; 
     transition: 100ms ease-in-out;
 }
 
@@ -215,7 +215,7 @@
     color: #fff;
     height: 40px;
     width: 100%;
-    background-color: #1D6C4B;
+    background-color: hsla(350,70%,50%,1);
 }
 
 /*
