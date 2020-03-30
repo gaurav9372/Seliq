@@ -255,7 +255,6 @@
 }
 .thumbs:hover{
     transform: scale(1.03);
-    box-shadow: 0px 0px 5px hsla(350,70%,50%,1);; 
     transition: 100ms ease-in-out;
 }
 
@@ -272,7 +271,7 @@
 /*    color: red;*/
 }
 
-.button{
+.t_button{
     display: flex;
     justify-content: center;
     align-items: center;
