@@ -32,7 +32,7 @@ body {
 /*font-family: 'Open Sans', sans-serif*/
 /*font-family: 'Oswald', sans-serif*/
 /*font-family: 'Righteous', sans-serif*/
-    font-family: 'Lato', sans-serif
+    font-family: 'Poppins', sans-serif
     !important;
     color : #000;
     cursor: default;
@@ -81,7 +81,6 @@ body p{
     width: 100%;
 }
 .icon{
-    
     padding: 5px 5px 5px;
     width:30px;
     height: 100%;
@@ -133,8 +132,22 @@ body p{
     background-color:  hsla(350,70%,38%,1) !important;
 }
 .dropdown-menu a:hover{
-    border-left:5px solid #1EA075;
+    border-left:5px solid var(--scolor);
     padding-right: -3px;
+}
+
+.nav-link{
+color:rgba(255,255,255,0.8) !important;
+}
+.nav-link:hover{
+color:rgba(255,255,255,1) !important;
+}
+
+.nav-item{
+    border-bottom: 1px solid var(--pcolordark);
+}
+.nav-item:nth-last-child(1){
+    border-bottom: 0px solid var(--pcolordark);
 }
 
 /*footer*/

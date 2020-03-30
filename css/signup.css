@@ -16,7 +16,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .fheader{
     display: flex;
     flex-direction: column;
@@ -27,10 +26,9 @@
     margin-bottom: 30px;
 }
 .heading{
-    font-family: 'Staatliches', regular;
+    font-family: 'Staatliches', sans-serif;
     text-transform: uppercase;
 }
-
 .heading h2{
     letter-spacing: 1px;
     font-weight: bold;
@@ -42,7 +40,6 @@
     padding: 0px;
     margin: 0px;
 }
-
 .fcontainer{
     display: flex;
     width: 100%;
@@ -53,25 +50,31 @@
     align-items: center;
 }
 
-.fcontainer .caption{
-/*    text-transform:uppercase;*/
-    width: 100%;
-}
-.fcontainer .textbox{
-    border: 1px solid var(--pcolor);
-    border-radius: 4px;
-    height: 2rem;
-    padding-left: 8px;
-    font-size: 0.8rem;
-    margin-bottom: 15px;
-}
-
 .row{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+/*    flex-direction: column;*/
+    margin-bottom: 15px;
 }
+.fcontainer .caption{
+    width: 100%;
+    margin-bottom: 3px;
+    display: flex;
+    align-content: center;
+}
+.fcontainer .textbox{
+    border: 1px solid var(--pcolor);
+    border-radius: 3px;
+    height: 2rem;
+    padding: 0px 8px;
+    font-size: 0.8rem;
+    
+}
+
+
 .fcontainer .w50{
     width: 49%;   
 }
@@ -103,11 +106,11 @@
     margin-top: 10px;
 }
 
-.fcontainer a{
+.heading a{
 /*    font-style: italic;*/
     color: var(--pcolor) !important;
     cursor: pointer;
-    font-weight: bold;
+/*    font-weight: bold;*/
 }
 
 
