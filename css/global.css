@@ -13,6 +13,13 @@
 */
 
                     /*Global*/
+
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+}
+
+
 body {
     background-color: black;
     box-sizing: border-box;
@@ -38,7 +45,7 @@ body p{
 
 /*navigation bar*/
 .nav-bg-color{
-    background-color: hsla(350,70%,50%,1);
+    background-color: var(--pcolor);
 }
 /*
 .circle{
@@ -188,6 +195,6 @@ body p{
     color: #fff;
 }
 .fcaption a:hover{
-    color: hsla(350,70%,50%,1);
+    color: var(--pcolor);
     text-decoration: none;
 }
