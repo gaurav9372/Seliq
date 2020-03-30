@@ -1,15 +1,21 @@
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+}
+
+
 .body_section{
     position: relative;
     display: flex;
     height: 500px;
     width: 100%;
     padding: 20px ;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 23px;
 }
-  
+   
 .headings{
     display: flex;
     width: 100%;
