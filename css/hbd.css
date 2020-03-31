@@ -1,0 +1,149 @@
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+}
+
+.body_section{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.image_container{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    padding: 15px;
+    justify-content: space-between;
+    flex-direction: column;
+/*    background-color: aqua;*/
+}
+.heartbox{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+/*    background-color: aqua;*/
+}
+.heart{
+/*    margin-top: 140px;*/
+}
+.hearticon{
+    width: 40px;
+    height: 40px;
+}
+
+.photo{
+    width: 90%;
+/*    height: 95%;*/
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fcontainer{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 0px solid var(--pcolor);
+    border-radius: 25px;
+/*    padding: 20px;*/
+    justify-content: center;
+    background: linear-gradient(var(--pcolor),var(--pcolordarker));
+    flex-direction: column;
+    align-items: center;
+/*    justify-content: space-between;*/
+}
+
+.fcontainer .fheader{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+/*    margin-bottom: 00px;*/
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 80px;
+    
+/*    border-bottom: 2px solid var(--pcolor);*/
+}
+.heading h1{
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+/*    letter-spacing: 3px;*/
+/*    word-spacing: 5px;*/
+/*    font-weight: bold;*/
+    margin: 0px;
+    color: var(--pcolor);
+    padding: 0px;
+    animation-name: blink;
+  animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%   {color: var(==pcolor);font-size:2em}
+  50%  {color: transparent;;font-size:1.95em}
+  100% {color: var(==pcolor);font-size:2em}
+}
+
+.sub_heading{
+    font-family: 'Staatliches', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.sub_heading p{
+    font-family: 'Freckle Face', cursive;
+    margin: 0px;
+    font-size: 3em;
+    color:#fff;
+    padding: 0px;
+    animation-name: name;
+  animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name {
+    0%   {transform: rotate(0deg)}
+    25%   {transform: rotate(10deg)}
+    50%   {transform: rotate(0deg)}
+    75%  {transform: rotate(-10deg)}
+    100% {transform: rotate(0deg)}
+}
+
