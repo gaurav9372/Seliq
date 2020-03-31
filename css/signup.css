@@ -71,8 +71,18 @@
     height: 2rem;
     padding: 0px 8px;
     font-size: 0.8rem;
-    
+    box-shadow:inset 0px 0px 3px 0px rgba(0,0,0,0.5);
 }
+
+/*
+.fcontainer .textbox:hover{
+    box-shadow:inset 0px 0px 8px 0px var(--pcolor);
+}
+*/
+.fcontainer .textbox:focus{
+    box-shadow:inset 0px 0px 4px 0px var(--pcolor);
+}
+
 
 
 .fcontainer .w50{
