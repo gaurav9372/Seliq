@@ -80,7 +80,7 @@
 }
 */
 .fcontainer .textbox:focus{
-    box-shadow:inset 0px 0px 4px 0px var(--pcolor);
+    box-shadow:0px 0px 8px 0px var(--pcolor);
 }
 
 .fcontainer .textbox:focus{
