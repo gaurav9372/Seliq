@@ -103,6 +103,10 @@
     color: var(--pcolor);
 }
 
+.button:focus{
+    outline: 0px;
+}
+
 .body_section p{ 
     font-size: 0.9rem;
     margin-top: 10px;

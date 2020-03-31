@@ -128,6 +128,10 @@ body p{
     color: #fff !important;
     border: transparent !important;
 }
+.navbar-toggler:focus{
+    outline: 0px;
+}
+
 .navbar-toggler:hover{
     background-color:  hsla(350,70%,38%,1) !important;
 }

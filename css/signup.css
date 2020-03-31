@@ -83,6 +83,9 @@
     box-shadow:inset 0px 0px 4px 0px var(--pcolor);
 }
 
+.fcontainer .textbox:focus{
+    outline: 0px;
+}
 
 
 .fcontainer .w50{
@@ -109,6 +112,10 @@
     border: 2px solid var(--pcolor); 
     background-color: transparent;
     color: var(--pcolor);
+}
+
+.button:focus{
+    outline: 0px;
 }
 
 .fcontainer p{ 

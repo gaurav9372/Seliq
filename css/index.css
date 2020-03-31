@@ -139,6 +139,11 @@ justify-content: flex-end;
     margin: 8px 0px;
     border-radius: 5px;
 }
+
+.c_button:focus{
+    outline: 0px;
+}
+
 .c_button p{
     font-weight: bold;
     text-decoration: none;
@@ -227,6 +232,10 @@ justify-content: flex-end;
     border: 0px solid #1EA075;
     padding: 0px 9px;
     
+}
+
+.searchbox_container .input:focus{
+    outline: 0px;
 }
 
 /* .tab .categorybox{  
