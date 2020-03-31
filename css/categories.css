@@ -1,0 +1,66 @@
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+}
+.panel_section{
+    display: flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+/*    height:700px;*/
+    width:100%;
+    flex-direction: column;
+/*    background-color: red;*/
+}
+.panel_container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items:center;
+      padding: 20px 0px;
+    justify-content: space-around;
+/*    background-color: yellow;*/
+}
+.cblock{
+    display: flex;
+    margin: 7px;
+    width:  180px;
+    height: 40px;
+/*    padding: 4px;*/
+    background-color: #fff;
+/*    border-radius: px ;*/
+/*    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3); */
+    border-radius: 2px ; 
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.cblock:hover{
+    transform: scale(1.03);
+    transition: 100ms ease-in-out;
+}
+.cblock .icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.cblock .c_icon{
+    height: 60%;
+    width: 60%;
+/*    color: red;*/
+}
+.cblock .t_button{
+    font-size: 0.9em;
+    display: flex;
+/*    color: #fff;*/
+    padding: 5px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    background-color: rgba(0,0,0,0.05);
+}
