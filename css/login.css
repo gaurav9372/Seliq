@@ -8,26 +8,49 @@
 
 .body_section{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 450px;
-    padding: 20px;
+   height: 700px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 } 
 .fheader{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     height: 80px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 00px;
 }
 .heading{
     font-family: 'Staatliches', sans-serif;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 /*    border-bottom: 2px solid var(--pcolor);*/
 }
 .heading h2{
@@ -39,25 +62,41 @@
 }
 
 .fcontainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 300px;
-    
+    width: 90%;
+    max-width: 400px;
     border: 0px solid var(--pcolor);
     border-radius: 5px;
     padding: 20px;
     
+    background: -webkit-gradient(linear,left top, left bottom,from(var(--pcolor)),to(var(--pcolordark)));
+    
     background: linear-gradient(var(--pcolor),var(--pcolordark));
 /* */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 /*    justify-content: space-between;*/
 }
 
 .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 15px;
 /*    flex-direction: column;*/
@@ -65,8 +104,11 @@
 .fcontainer .caption{
     color: #fff;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 3px;
+    -ms-flex-line-pack: center;
     align-content: center;
 /*    justify-content: center;*/
 }
@@ -86,8 +128,13 @@
 }
 
 .button{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 120px;
     height: 40px;
@@ -109,7 +156,6 @@
 
 .body_section p{ 
     font-size: 0.9rem;
-    margin-top: 10px;
 }
 .body_section a{
 /*    font-style: italic;*/
@@ -121,11 +167,6 @@
 /*Tablet*/
 
 @media all and (min-width: 600px) {
-
-.f_container{
-    
-    width:300px;
-}
 
 }
 

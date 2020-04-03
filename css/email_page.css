@@ -1,83 +1,151 @@
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+}
+
 .body_section{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 700px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+ 
+.fcontainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
 }
-
-main p{
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.2rem;
-}
-
-.headings{
+.fheader{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    width: 90%;
+    max-width: 700px;
+    height: 100px;
+  
+    -webkit-box-pack: start;
+  
+    -ms-flex-pack: start;
+  
     justify-content: center;
+    
+    -webkit-box-align: center;
+    
+    -ms-flex-align: center;
+    
     align-items: flex-start;
-    margin: 10px 0px 20px;
+   
 }
 
-.headings p{
+.heading{
+/*    text-transform: uppercase;*/
+}
+.heading p{
     margin: 0px;
     padding: 0px;
 }
 
-.f_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-
-.f_container .textbox{
-    border: 1px solid #663399;
-    width: 100%;
-    border-radius: 4px;
+.fcontainer .textbox{
+    border: 1px solid var(--pcolor);
+    border-radius: 3px;
     height: 2rem;
-    padding-left: 8px;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    padding: 0px 8px;
+    font-size: 0.8rem;
 }
 
-.caption{
-    text-transform:uppercase;
-    width: 100%;
+.fcontainer .textbox:focus{
+    -webkit-box-shadow:0px 0px 8px 0px rgba(rgba( 0, 0, 0, 0.5 ));
+    box-shadow:0px 0px 8px 0px rgba( 0, 0, 0, 0.5 );
+    outline: 0px;
 }
+
 .row{
+   display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+/*    flex-direction: column;*/
+    margin: 5px 0px;
 }
 
+.w100{
+    width: 100%;
+}
 
 .button{
+   
+    display: -webkit-box;
+   
+    display: -ms-flexbox;
+   
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    font-size: 0.9em;
+    height: 40px;
     border-radius: 6px;
     margin-top: 20px;
-    background-color: #663399;
+    background-color: var(--pcolor);
     color: #fff;
     border: 0px;
 }
-
-
 .button:hover{
-    border: 2px solid #663399; 
+    border: 2px solid var(--pcolor); 
     background-color: transparent;
-    color: #663399;
+    color: var(--pcolor);
+}
+.button:focus{
+    outline: 0px;
 }
 
 
@@ -85,10 +153,6 @@ main p{
 
 @media all and (min-width: 600px) {
 
-.f_container{
-    
-    width:300px;
-}
 
 }
 
