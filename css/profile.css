@@ -30,7 +30,8 @@
 
  
 .fcontainer{
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -138,6 +139,7 @@
     font-weight: bold;
 }
 .lower_block p{
+    font-size: 0.9em;
     color: #fff;
 }
 
