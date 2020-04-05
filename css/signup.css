@@ -5,115 +5,56 @@
     --scolor:hsla(43,90%,50%,1);
 }
 
-
 .body_section{
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 700px;
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: #fff;
-/*    background-image: url("../images/signup_bg.jpg");*/
-/*
-    background-size: cover;
-    background-position: center;
-*/
 }
 
-.fcontainer_outer{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-/*    width: 90%;*/
-    padding: 10px;
-    width: 95%;
-    max-width: 600px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4); 
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
-    background-color: var(--pcolor);
-    border-radius: 15px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 .fcontainer{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    padding: 15px;
+    width: 90%;
+    max-width: 600px;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 5px;
-     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6); 
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 25px 0px hsla(0,100%,50%,0.2);
+    background:
+        linear-gradient(10deg,transparent 380px,var(--pcolor) 380px),
+        linear-gradient(80deg,#fff 80%,var(--pcolordark) 80%);
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .fheader{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     height: 100px;
-/*     background-color: rgba(0,0,0,0.4);*/
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 10px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--pcolor);
 }
 .heading{
     font-family: 'Staatliches', sans-serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     padding: 0px 10px;
-/*    text-transform: uppercase;*/
 }
 .heading h2{
-/*    letter-spacing: 1px;*/
     font-weight: bold;
     margin: 0px;
-    color: var(--pcolor);
+    color: #fff;
     padding: 0px;
 }
 .heading p{
@@ -121,79 +62,45 @@
     margin: 0px;
 }
 .heading a{
-/*    font-style: italic;*/
-    color: var(--pcolor) !important;
-    cursor: pointer;
-/*    font-weight: bold;*/
+    color: #fff !important;
 }
-
 
 .inner_container{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-/*    padding: 15px;*/
-/*    padding: 10px;*/
-/*    background-color: green;*/
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
-
-.row{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-/*    flex-direction: column;*/
-    margin: 5px 0px;
-}
-
 .inner_container .caption{
     width: 100%;
     line-height: 1.7em;
     font-size: 0.9em;
-/*    margin-bottom: 9px;*/
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
     align-content: center;
 }
 .inner_container .textbox{
-    border: 1px solid var(--pcolor);
-    border-radius: 3px;
-    height: 2rem;
+    border: 1px solid hsla(0,100%,10%,0.3);
+    border-radius: 4px;
+    height: 2.3em;
     padding: 0px 8px;
-    font-size: 0.8rem;
-    background-color: rgba(0,0,0,0.0);
-    -webkit-box-shadow:inset 0px 0px 3px 0px rgba(0,0,0,0.5);
-    box-shadow:inset 0px 0px 3px 0px rgba(0,0,0,0.5);
+    font-size: 0.8em;
+    background-color: rgba(255,255,255,1);
+    box-shadow:inset 2px 2px 4px 0px rgba(0,0,0,0.3);
 }
-
 .inner_container .textbox:focus{
-    -webkit-box-shadow:0px 0px 8px 0px var(--pcolor);
-    box-shadow:0px 0px 8px 0px var(--pcolor);
+    box-shadow:0px 0px 5px 0px var(--pcolor);
     outline: 0px;
 }
 
-
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0px;
+}
 .inner_container .w50{
     width: 49%;   
 }
@@ -202,22 +109,16 @@
 }
 
 .button{
-   
-    display: -webkit-box;
-   
-    display: -ms-flexbox;
-   
-    display: flex;
-    -ms-flex-line-pack: center;
+   display: flex;
     align-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
+    
     width: 120px;
     font-size: 0.9em;
     height: 40px;
-    border-radius: 6px;
+    border-radius: 40px;
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: var(--pcolor);
     color: #fff;
     border: 0px;
@@ -227,28 +128,13 @@
     background-color: transparent;
     color: var(--pcolor);
 }
-
 .button:focus{
     outline: 0px;
 }
 
-.inner_container p{ 
-    font-size: 0.9rem;
-    margin-top: 10px;
-}
-
-
 /*Tablet*/
-
 @media all and (min-width: 600px) {
-
 }
-
 /*Desktop*/
-@media all and (min-width: 900px) {
-    
-
-
-
-    
+@media all and (min-width: 900px) {   
 }
