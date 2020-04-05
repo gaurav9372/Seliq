@@ -44,7 +44,7 @@
     margin-bottom: 10px;
 }
 .heading{
-    font-family: 'Staatliches', sans-serif;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,14 +52,32 @@
     padding: 0px 10px;
 }
 .heading h2{
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
     margin: 0px;
     color: #fff;
+    letter-spacing: 1px;
     padding: 0px;
 }
+
 .heading p{
+    margin-top: 6px;
+    font-family: 'lato', sans-serif;
+    
+/*
+    Bebas Neue
+    Carter One
+    Staatliches
+    Josefin Sans
+    Lobster
+    Montserrat
+    Open Sans
+    Righteous
+*/
+/*    color:rgba(255,255,255,1);*/
     padding: 0px;
-    margin: 0px;
+    letter-spacing: 1px;
 }
 .heading a{
     color: #fff !important;
