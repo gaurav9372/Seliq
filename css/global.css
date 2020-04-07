@@ -273,6 +273,12 @@ color:rgba(255,255,255,1) !important;
     text-decoration: none;
 }
 
+.f_row{
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
 
 /*Icon*/
 
@@ -280,8 +286,9 @@ color:rgba(255,255,255,1) !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 16px;
-    width: 16px;
+    padding: 1px;
+    height: 15px;
+    width: 15px;
     margin: 0px 5px;
 /*    border-radius: 50%;*/
 }

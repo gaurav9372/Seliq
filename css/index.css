@@ -52,7 +52,7 @@
     align-items: center;
     
     color: #fff;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
     url("../images/cover_low.jpg")
     ;
     background-position: center; 
@@ -556,7 +556,7 @@
         height: 80%;
     }
 .c_button{
-    width: 200px;
+    width: 220px;
     height: 60px;
     font-size: 1.2em;
 }
@@ -581,7 +581,7 @@
     height: 50px;
     } 
 .thumbs:hover .t_button{
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 .image_container{
     height: 150px;
