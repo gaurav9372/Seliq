@@ -273,10 +273,22 @@ color:rgba(255,255,255,1) !important;
     text-decoration: none;
 }
 
+.fcaption ul{
+    padding: 0px;
+    padding-left: 3px;
+    margin:0px;
+    margin-top: 5px;
+}
+.fcaption ul li{
+    padding: 0px;
+    margin: 0px;
+}
+
 .f_row{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    margin-bottom: 5px;
     display: flex;
 }
 
