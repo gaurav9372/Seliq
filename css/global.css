@@ -1,4 +1,14 @@
-                    /*Resetting*/
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+    --success_color:rgb(0,255,0,1);
+    --button_font_size:0.9em;
+}
+ 
+
+/*Resetting*/
 *::after,
 *::before{
     -webkit-box-sizing: border-box;
@@ -15,11 +25,8 @@
 
                     /*Global*/
 
-:root{
-    --pcolor:hsla(350,70%,50%,1);
-    --pcolordark:hsla(350,70%,35%,1);
-}
 
+/*font-size: var(--button_font_size);*/
 
 body {
     background-color: black;
@@ -95,6 +102,10 @@ body p{
 .SB{
     border: none;
     width: 100%;
+}
+
+.SB:focus{
+    outline: 0px;
 }
 .icon{
     padding: 5px 5px 5px;
@@ -177,7 +188,7 @@ color:rgba(255,255,255,1) !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color:#fff;
     height: 250px;
     font-family: roboto,sans-serif;

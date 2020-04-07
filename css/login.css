@@ -3,8 +3,9 @@
     --pcolordark:hsla(350,70%,35%,1);
     --pcolordarker:hsla(350,70%,30%,1);
     --scolor:hsla(43,90%,50%,1);
+    --success_color:rgb(0,255,0,1);
+    --button_font_size:0.9em;
 }
-
 
 .body_section{
     position: relative;
@@ -114,17 +115,13 @@
     width: 100%;
 }
 
-.row:nth-child(2){
-    margin-bottom:0px;
-}
 
 .button{
     display: flex;
     align-content: center;
     justify-content: center;
-    
     width: 120px;
-    font-size: 0.9em;
+    font-size: var(--button_font_size);
     height: 40px;
     border-radius: 40px;
     margin-top: 20px;
