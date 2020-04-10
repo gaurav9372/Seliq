@@ -52,7 +52,7 @@
     align-items: center;
     
     color: #fff;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
     url("../images/cover_low.jpg")
     ;
     background-position: center; 
