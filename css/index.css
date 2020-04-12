@@ -33,16 +33,13 @@
   
  
 .cover_section{
-    padding-top: 60px;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    height: 530px;
+    padding-top: 60px;
     display: flex;
     width: 100%;
-    height: 400px;
-/*    background-color: blue;*/
+    background-color: blue;
 }
-
 .cover_image{
     display: flex;
     width: 100%;
@@ -50,9 +47,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    color: #fff;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
     url("../images/cover_low.jpg")
     ;
     background-position: center; 
@@ -62,54 +57,60 @@
 .c_container{
     display: flex;
     flex-direction: column;
-    width: 330px;
-    height: 80%;    
+    width: 90%;
+    min-width: 393px;
+    height: 250px;
     justify-content: space-between;
     align-items: center;
 /*    background-color: crimson;*/
 }
 
-.c_row {
+.c_upper{
+    flex-direction: column;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    align-items: center;
+/*    background-color: blue;*/
+    justify-content: center;
+}
+.c_upper h1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-family: 'lobster',cursive;
+    line-height: 64px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+/*    font-family: 'Carter One', cursive;*/
+/*    width: 271px;*/
+/*    height: 64.29px;*/
+}
+.c_upper p{
+    font-size: 1rem;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.c_header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-/*    background-color: blue;*/
-    align-items: center;
-    height: 160px;
+.c_lower{
+    width: 320px;
+/*    background-color: green;*/
 }
+
 .buttons_container{
     width: 100%;
+    height: 50px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 /*    background-color: chartreuse;*/
-   
-}
-.buttons_container a{
-    text-decoration:none;
-}
-.buttons_container a:hover{
-   text-decoration: none;
+/*    margin-bottom: 10px;*/
 }
 
-.c_header h1{
-    font-family: 'Lobster', cursive;
-/*    font-family: 'Carter One', cursive;*/
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-}
-.c_header p{
-    font-size: 1em;
-/*    color: var(--pcolor);*/
-/*    opacity: 0.6;*/
-    line-height: 1.3;
-    margin-top: 10px;
+.buttons_container a:hover{
+    text-decoration: none;
 }
 
 .c_button{
@@ -118,11 +119,11 @@
     width: 150px;
     height: 40px;
     font-size: var(--button_font_size);
-    align-self: flex-end;
     justify-content: center;
     align-items: center;
     margin: 0px 0px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 .c_button:focus{
     outline: 0px;
@@ -131,21 +132,21 @@
 .c_button p{
     margin: 0px;
     padding: 0px;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .signin_button{
     background-color: var(--scolor);
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
-    border: 0px;
+    border: 2px solid var(--scolor);
 }
 .signin_button p{
     color:#000;
 }
 .signin_button:hover{
     background-color: var(--pcolor);
+    border-color: var(--pcolor);
 }
 .signin_button:hover > p{
     color:#fff ;
@@ -168,21 +169,34 @@
 }
 
 .last{
+    width: 100%;
     display: flex;
-    padding:8px; 
     align-items: center;
-    flex-direction: row;
     justify-content: flex-end;
 }
-.last p{
-    font-size: 0.7em;
-    color: #fff;
-}
 .last p a{
+    font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
 }
 
+.last p a:hover{
+    color:var(--pcolor);
+}
+
+.wave_container{
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    left: 0px;
+/*    background-color: aqua;*/
+    width: 100%;
+}
+.wave_container img{
+    width: 100%;
+    height: 70px;
+/*    background-color: blue;*/
+}
 
          /*Search tab*/
 
@@ -190,52 +204,70 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 80px;
     justify-content: center;
     align-items: center;
     background-color: var(--pcolor);
+/*    background-color: aqua;*/
+}
+
+.outer{
+    padding: 17.5px;
+    display: flex;
+    height: 70px;
+    width: 95%;
+    border-radius: 35px;
+    background-color: var(--pcolordark);
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
 }
 
 .searchbar{
+    width: 100%;
     display: flex;
-    width: 90%;
     justify-content: center;
     align-items: center;
     height: 35px;
-    max-width: 400px;
 }
 
 .searchbar .search_text{
     display: flex;
-    background-color: var(--pcolor);
+    background-color: #fff;
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
-    padding-left:18px;
-    padding-right:12px;
+    font-weight: bold;
+    padding-left:15px;
+    letter-spacing: 1px;
+    padding-right:10px;
     height: 100%;
-    color:#fff;
+    color:var(--pcolor);
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
 }
 
 .searchbar .searchbox_container{
     display: flex;
     flex: 1;
     height: 100%;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
+    margin-right: 17px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
 /*
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 */
     overflow: hidden;
 }
+
 .searchbox_container .searchbox{
     width:100%;
     height: 100%;
     border: 0px solid #1EA075;
-    padding-left:9px;
+    padding-right:9px;
     font-size: 0.9em;
 }
 .searchbox_container .searchbox:focus{
@@ -243,17 +275,16 @@
 }
 
 .searchbar .search_icon_container{
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    
     display: flex;
-    height: 100%;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
-    width: 65px;
-    padding-left: 15px;
-    padding-right: 15px;
     justify-content: center;
     align-items: center;
+    
     background-color: #fff;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
 }
 .search_icon_container:hover{
     background-color:rgba(255,255,255,0.7);
@@ -270,44 +301,29 @@
 
                   /*Categories*/
 .categories_section{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
-    -ms-flex-line-pack: center;
     align-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-/*    height:700px;*/
     width: 100%;
     height: 1200px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-/*    background-color: red;*/
+    background:linear-gradient(var(--pcolor),var(--pcolordark))
 }
+
 .categories_section .ct_header{
     width: 100%;
-    margin-top:20px; 
-    padding-left: 20px;
-    height: auto;
+    height: 2em;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
 /*    font-weight: bold;*/
-    font-size: 1.2em;
+    font-size: 20px;
+    color: #fff;
 /*    background-color: yellow;*/
 }
 
 .ct_container{
-/*
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items:center;
-    justify-content: space-around;
-    background-color: yellow;
-    background-color: #770000;
-*/
     display: grid;
     width: 100%;
     height: 100%;
@@ -317,15 +333,9 @@
     grid-template-rows:190px 190px 190px 190px 190px;
     
     justify-items:center;
-    -webkit-box-align:center;
-    -ms-flex-align:center;
     align-items:center;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
     align-content: space-evenly;
-/*grid-gap: 20px;*/
 }
 
 
@@ -362,11 +372,9 @@
 .t_button{
     position: absolute;
     font-size: var(--button_font_size);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     bottom: 0px;
-    color: #fff;
+    
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -383,9 +391,10 @@
     display: flex;
     width: 120%;
     height: 40px;
-    background-color: var(--pcolor);
+    background-color: #fff;
     transition: 1s ease ;
     z-index: -1;
+    color: #000;
 }
 
 .thumbs:hover .t_button{
@@ -395,8 +404,6 @@
 }
 
 .thumbs:hover .t_button .inner_span{
-    background-color: rgba(0,0,0,0.6);
-    background-color: var(--pcolor);
     transform: rotate(-10deg);
     height: 70px;
 }
