@@ -55,7 +55,7 @@ body p{
 /*navigation bar*/
 .navbar{
     position: absolute !important;
-    z-index: 999999;
+    z-index: 999;
     width: 100%;
 }
 
