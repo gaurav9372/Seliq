@@ -7,31 +7,7 @@
     --success_color:rgb(0,255,0,1);
     --button_font_size:0.9em;
 }
-
-
-/*News Bulletin*/
-
-/* .bulletin{
-    visibility: hidden;
-    position: absolute;
-    display: flex;
-    background-position: 10% 10%; 
-    justify-content: flex-start;
-    align-items: center;
-    font-family: "inconsolata" , sans-serif;
-    font-size: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    height: 30px;
-    color: #fff;
-    background-color: #339933;
-} */
-  
-                /*Cover section*/
-
-  
- 
+            /*Cover section*/
 .cover_section{
     position: relative;
     height: 530px;
@@ -174,6 +150,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin: 5px 0px;
 }
 .last p a{
     font-size: 0.8rem;
@@ -199,7 +176,7 @@
 /*    background-color: blue;*/
 }
 
-         /*Search tab*/
+        /*Search tab*/
 
 .searchbox_section{
     position: relative;
@@ -222,6 +199,7 @@
     justify-content: center;
     align-items: center;
     max-width: 450px;
+    
 }
 
 .searchbar{
@@ -314,14 +292,13 @@
 
 .categories_section .ct_header{
     width: 100%;
-    height: 2em;
     display: flex;
     align-items: flex-end;
     padding-left: 5%;
-/*    font-weight: bold;*/
-    font-size: 20px;
+    font-weight: bold;  
+    font-size: 1.4rem;
     color: #fff;
-/*    background-color: yellow;*/
+/*  background-color: yellow;  */
 }
 
 .ct_container{
@@ -330,15 +307,13 @@
     height: 100%;
     
     grid-template-columns: 150px 150px;
-    
     grid-template-rows:190px 190px 190px 190px 190px;
-    
+
     justify-items:center;
     align-items:center;
     justify-content: space-evenly;
     align-content: space-evenly;
 }
-
 
 .thumbs{
     position: relative;
@@ -348,7 +323,9 @@
     border-radius: 8px ; 
     overflow: hidden;
     flex-direction: column;
+    box-shadow:0px 0px 15px 0px rgba(0,0,0,0.4);
 }
+
 /*
 .thumbs:hover{
     transform: scale(1.03);
@@ -421,64 +398,36 @@
 
 /*Resposive*/
 
-/*iphone regular 375px portrait  Default*/
-@media only screen and (min-width: 375px) {
-}
-/*iphone (6-8) 375px portrait*/
-@media only screen and (min-width: 375px) {
-}
-/*Android (Pixel 2) portrait 412px*/
-@media only screen and (min-width: 412px) {
-}
-/*iphone (6-8) plump 414px portrait*/
-@media only screen and (min-width: 414px) {
-}
-/*iphone (6-8) 667px landscape*/
 @media only screen and (min-width: 600px) {
     .categories_section{
     height: 780px;
     }
-    
     .ct_container{
     grid-template-columns: 150px 150px 150px;
     grid-template-rows:190px 190px 190px;
     }
-    
 }
-/*Android (Pixel 2) landscape 684px*/
-@media only screen and (min-width: 684px) {
-}
-/*iphone regular 734px landscape*/
-@media only screen and (min-width: 734px) {
-}
-/*iphone (6-8) plump 736px landscape*/
-@media only screen and (min-width: 736px) {
-}
-/*ipad portrait 768px*/
+
 @media only screen and (min-width: 768px) {
     .categories_section{
     height: 780px;
     }
-    
     .ct_container{
     grid-template-columns: 150px 150px 150px 150px ;
     grid-template-rows:190px 190px 190px;
     }
 }
 
-/*Android tab*/
 @media only screen and (min-width: 992px) {
     .categories_section{
     height: 600px;
     }
-    
     .ct_container{
     grid-template-columns: 150px 150px 150px 150px 150px;
     grid-template-rows:190px 190px;
     }
 }
 
-/*ipad landscape 1024px*/
 @media only screen and (min-width: 1024px) {
     .categories_section{
     height: 550px;
@@ -489,73 +438,44 @@
     }
 }
 
-/*laptop*/
 @media only screen and (min-width: 1200px) {
-
 .cover_section{
-        height: 80vh;
+        height: 600px;
     }
-.c_header h1{
-        font-size: 3em;
-    }
-.c_header p{
-    font-size: 1.2em;
-}
-.last p{
-    font-size: 1em;
-}
 .c_container{
-        width:500px;
-        height: 80%;
+    height: 300px;
+    }
+.c_upper h1{
+    font-size: 4rem;
+    }
+.c_upper p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    }
+.c_lower{
+    width: 420px;
     }
 .c_button{
-    width: 220px;
-    height: 60px;
-    font-size: 1.2em;
-}
-    
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    }
+.wave_container{
+    height: 100px;
+    }
+.wave_container img{
+height: 100px;
+    }
 .categories_section{
     height: 650px;
     }
+
 .ct_container{
-    grid-template-columns: 160px 160px 160px 160px 160px 160px;
-    grid-template-rows:200px 200px;
-    }
-.thumbs{
-        width: 160px;
-        height:200px;
-    }
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows:190px 190px;
+}
 
 .categories_section .ct_header{
-    font-size: 2em;
+    margin-top:15px;
+    font-size:2rem;
 }
-.t_button{
-    font-size: 1.1em;
-    height: 50px;
-    } 
-.thumbs:hover .t_button{
-    font-size: 1.3em;
-}
-.image_container{
-    height: 150px;
-    }
-}
-
-/*basic sizes
-max width : 600px
-min-width : 600px 
-min-width : 768px
-min-width : 992px
-min- width : 1200px
-*/
-
-
-
-
-
-
-
-
-
-
-
