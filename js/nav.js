@@ -11,7 +11,7 @@ function touch(){
         menu.style.height = null;
     }
     else{
-  menu.style.height = "120px";
+  menu.style.height = "150px";
     }                     
 }
 
