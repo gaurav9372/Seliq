@@ -52,11 +52,12 @@ body,p{
     align-items: center;
     position: fixed;
     
-    background-color: transparent;
+    background-color: var(--pcolor);
 /*    background-color: brown;*/
     height: 50px;
     width: 100%;
     z-index: 999;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -65,16 +66,17 @@ body,p{
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 140px;
+    width: 136.42px;
     background-color: var(--pcolor);
 }
 
 .logo img{
 /*    box-shadow: 0px 0px 1px 1px black;*/
 /*    background-color: aqua;*/
-    height: 95%;
-    width: 95%;
+    height: 90%;
+    width: 90%;
 }
+
 
 #toggler{
     display: flex;
@@ -84,6 +86,10 @@ body,p{
     align-items: center;
     flex-direction: column;
     background-color: var(--pcolor);
+    border: 0px;
+}
+#toggler:focus{
+    outline: 0px;
 }
 
 .smbar{
@@ -96,6 +102,38 @@ body,p{
 
 #toggler:hover > .smbar{
     background-color: rgba(255,255,255,0.8);
+}
+
+.navbar ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+#links{
+    overflow: hidden;
+    height: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transition: height 300ms;
+}
+
+.navbar ul li{
+    padding: 0px;
+    margin: 0px;
+    display:inline-block;
+}
+
+#links .nav_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 10px;
+    height: 40px;
+    border-bottom: 1px solid var(--pcolordark);
+    background-color: var(--pcolor);
 }
 
 

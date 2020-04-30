@@ -13,7 +13,7 @@
      
   		<title>Seliq - Home Page</title>
 
-    <script src="bootstrap/jquery.js"></script>
+    <script src="js/global.js"></script>
 
     <!--    Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Bebas+Neue&family=Carter+One&family=Staatliches&family=Josefin+Sans&family=Lato:wght@400;700;900&family=Lobster&family=Montserrat&family=Open+Sans:wght@400;700;800&family=Oswald:wght@300;400&family=Righteous&display=swap" rel="stylesheet">
@@ -35,18 +35,37 @@
     
 <nav class="navbar">
     
-    <a href="abc.html">
-        <div class="logo">
+    <a href="index.html" class="logo">
         <img src="images/logo.png">
-        </div>
     </a>
     
-    <div id="toggler"> 
+    <div class="space"></div>
+     
+    <button type="button" onclick="toggle()" id="toggler" > 
        <div class="smbar"></div> 
        <div class="smbar"></div> 
        <div class="smbar"></div> 
-    </div>
+    </button>
     
+    <ul id="links">
+        <li>
+            <a href="signup.html" class="nav_item">
+            Signin
+            </a>
+            </li>
+        
+            <li>
+            <a href="login.html" class="nav_item">
+            Login
+                </a>
+            </li>
+        
+            <li>
+            <a href="profile.html" class="nav_item">
+            My account
+            </a>
+            </li>
+        </ul>
 </nav>
     
     
