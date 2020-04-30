@@ -59,6 +59,7 @@ body,p{
     z-index: 999;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
 
 .logo{
@@ -115,7 +116,9 @@ body,p{
     display: flex;
     width: 100%;
     flex-direction: column;
+    background-color: var(--pcolor);
     transition: height 300ms;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
 
 .navbar ul li{
@@ -126,16 +129,19 @@ body,p{
 
 #links .nav_item{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-decoration: none;
     color: #fff;
     padding: 0px 10px;
     height: 40px;
     border-bottom: 1px solid var(--pcolordark);
-    background-color: var(--pcolor);
 }
 
+#links .nav_item:hover{
+    background-color: var(--pcolordark);
+    padding: 0px 16px; 
+}
 
 /*footer*/
 
