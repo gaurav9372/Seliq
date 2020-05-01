@@ -25,21 +25,10 @@
 
 body{
     box-sizing: border-box;
-/*font-family: 'Poppins', sans-serif ;*/
-/*font-family: 'Bebas Neue', sans-serif*/
-/*font-family: 'Carter One', sans-serif*/
-/*font-family: 'Josefin Sans', sans-serif*/
-/*font-family: 'Lobster', cursive*/
-/*font-family: 'Montserrat', sans-serif*/
-/*font-family: 'Open Sans', sans-serif*/
-/*font-family: 'Oswald', sans-serif*/
-/*font-family: 'Righteous', sans-serif*/
-    font-family: 'Poppins', sans-serif
-    !important;
-    margin: 0px;
-    color : #000;
-    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
+
 body,p{
     margin: 0px;
     padding: 0px;
@@ -51,9 +40,7 @@ body,p{
     display: flex;
     align-items: center;
     position: fixed;
-    
     background-color: var(--pcolor);
-/*    background-color: brown;*/
     height: 50px;
     width: 100%;
     z-index: 999;
@@ -152,10 +139,10 @@ body,p{
     font-size: 0.8em;
     color:#fff;
     height: 250px;
-    font-family: roboto,sans-serif;
+    font-family: Roboto,sans-serif;
     width:100%;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #000;
     box-sizing: border-box;
 }
 .wrap_one{
@@ -232,7 +219,7 @@ body,p{
     align-items: center;
 }
 
-/*icon*/
+/*Icon*/
 
 .s_icon_container{
     display: flex;
@@ -250,9 +237,6 @@ body,p{
 }
 
 @media all and (min-width: 992px) {
-.nav-item{
-    border-bottom: 0px solid;
-    }
 }
 
 

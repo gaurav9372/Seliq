@@ -5,27 +5,40 @@
     --scolor:hsla(43,90%,50%,1);
 }
 
+input{
+    border: 1px solid hsla(0,100%,10%,0.3);
+    border-radius: 4px;
+    height: 2.4rem;
+    padding: 0px 8px;
+    font-size: 0.9rem;
+/*    box-shadow:inset 0px 0px 4px 0px rgba(0,0,0,0.3);*/
+}
+
+input:focus{
+     box-shadow:0px 0px 5px 0px var(--pcolor);
+     border: 0px;
+     outline: 0px;
+}
+
+
 .body_section{
     position: relative;
     display: flex;
     width: 100%;
-    height: 700px;
-    padding-top: 60px;
+    height: 800px;
+    padding-top: 50px;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
 }
 
 .fcontainer{
     position: relative;
     display: flex;
     width: 90%;
-    max-width: 600px;
-    box-shadow: 0px 0px 35px 0px hsla(0,100%,50%,0.2);
+    max-width: 500px;    
+    box-shadow: 0px 0px 25px 0px hsla(0,100%,50%,0.4);
     overflow: hidden;
-    border-radius: 40px;
-    
-/*    animation: gradient 3s ease-in-out infinite;*/
+    border-radius: 20px;
 }
 .fcontainer .gradient1{
 /*    box-shadow: 0px 0px 19px 0px green;*/
@@ -75,52 +88,33 @@
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-/*    background-color: rgb(255, 197, 197);*/
-/*
-    background:
-    linear-gradient(10deg,transparent 380px,var(--pcolor) 380px),
-    linear-gradient(80deg,transparent 80%,var(--pcolordark) 80%);
-*/
 }
-
 
 .fheader{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100px;
     justify-content: center;
     padding-bottom: 10px;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 20px 0px;
     z-index: 7;
 }
-.heading{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px 10px;
-}
-.heading h2{
-    font-family: 'Oswald', sans-serif;
+.fheader h2{
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px;
     color: #fff;
-/*    letter-spacing: 1px;*/
-    padding: 0px;
 }
-.heading p{
+.fheader p{
     margin-top: 6px;
-    color: rgba(255,255,255,0.90);
-    font-family: 'lato', sans-serif;
-    font-size: 0.9em;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Open Sans',sans-serif;
+    font-size: 0.9rem;
     
 /*
     Bebas Neue
@@ -136,8 +130,9 @@
     padding: 0px;
     letter-spacing: 1px;
 }
-.heading a{
-    color: #fff !important;
+.fheader a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .inner_container{
@@ -150,23 +145,7 @@
 }
 .inner_container .caption{
     width: 100%;
-    line-height: 1.7em;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-}
-.inner_container .textbox{
-    border: 1px solid hsla(0,100%,10%,0.3);
-    border-radius: 4px;
-    height: 2.5em;
-    padding: 0px 8px;
-    font-size: 0.8em;
-    background-color: rgba(255,255,255,1);
-    box-shadow:inset 0px 0px 4px 0px rgba(0,0,0,0.3);
-}
-.inner_container .textbox:focus{
-    box-shadow:0px 0px 5px 0px var(--pcolor);
-    outline: 0px;
+    line-height: 2rem;
 }
 
 .row{
@@ -175,7 +154,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 8px 0px;
+    margin-bottom: 16px;
 }
 .inner_container .w50{
     width: 49%;   
@@ -185,7 +164,7 @@
 }
  
 .button{
-   display: flex;
+    display: flex;
     align-content: center;
     justify-content: center;
     width: 120px;
